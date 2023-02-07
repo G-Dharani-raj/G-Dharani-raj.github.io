@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.49a3d9a2.js",
-    "static/js/787.a7f45a66.chunk.js": "/static/js/787.a7f45a66.chunk.js",
-    "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.49a3d9a2.js.map": "/static/js/main.49a3d9a2.js.map",
-    "787.a7f45a66.chunk.js.map": "/static/js/787.a7f45a66.chunk.js.map"
+    "main.css": "/g-dharani-raj.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/g-dharani-raj.github.io/static/js/main.de32a746.js",
+    "static/js/787.a7f45a66.chunk.js": "/g-dharani-raj.github.io/static/js/787.a7f45a66.chunk.js",
+    "index.html": "/g-dharani-raj.github.io/index.html",
+    "main.073c9b0a.css.map": "/g-dharani-raj.github.io/static/css/main.073c9b0a.css.map",
+    "main.de32a746.js.map": "/g-dharani-raj.github.io/static/js/main.de32a746.js.map",
+    "787.a7f45a66.chunk.js.map": "/g-dharani-raj.github.io/static/js/787.a7f45a66.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.49a3d9a2.js"
+    "static/js/main.de32a746.js"
   ]
 }
