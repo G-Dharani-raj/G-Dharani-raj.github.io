@@ -1,6 +1,8 @@
 import Aboutme from "./components/About/Aboutme";
 import Intro from "./components/Intro/Intro";
 import Navbar from "./components/Navbar/Navbar";
+import Projects from "./components/projects/Projects";
+import Skills from "./components/skills/Skills";
 
 function App() {
 	return (
@@ -8,6 +10,8 @@ function App() {
 			<Navbar />
 			<Intro />
 			<Aboutme />
+			<Skills />
+			<Projects />
 		</>
 	);
 }
