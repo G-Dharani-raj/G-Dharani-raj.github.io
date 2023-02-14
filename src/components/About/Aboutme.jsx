@@ -4,7 +4,13 @@ import { Fade, Slide } from "react-awesome-reveal";
 
 const Aboutme = () => {
 	return (
-		<Flex maxW={"70%"} gap={10} margin={"auto"}>
+		<Flex
+			maxW={"70%"}
+			gap={10}
+			margin={"auto"}
+			alignItems={"center"}
+			py={20}
+		>
 			<Fade direction="left" triggerOnce={true}>
 				<Image
 					src="https://avatars.githubusercontent.com/u/105777295?s=400&u=b0a1a27550acba06294c9a54312a2f4840f4ad46&v=4"
@@ -12,7 +18,7 @@ const Aboutme = () => {
 				/>
 			</Fade>
 			<Fade direction="right" triggerOnce={true}>
-				<VStack py={20}>
+				<VStack>
 					<Heading>About Me</Heading>
 					<Text>
 						Aspiring Full Stack Developer. Capable of writing

@@ -39,7 +39,6 @@ const Skills = () => {
 					<SkillCard img={e.src} name={e.name} />
 				))}
 			</SimpleGrid>
-
 			<Heading size="lg" textAlign="center">
 				TOOLS
 			</Heading>
