@@ -10,7 +10,9 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
+import { BsDownload } from "react-icons/bs";
 import RESUME from "../../assets/fw21_0279_Dharani_raj_resume.pdf";
+import styles from "../projects/ProjectCard.module.css";
 
 const Aboutme = () => {
 	return (
@@ -21,17 +23,23 @@ const Aboutme = () => {
 				margin={"auto"}
 				alignItems={"center"}
 				py={20}
+				direction={{
+					base: "column",
+					lg: "row",
+					md: "column",
+					sm: "column",
+				}}
 			>
 				<Fade direction="left" triggerOnce={true}>
 					<Image
-						src="https://avatars.githubusercontent.com/u/105777295?s=400&u=b0a1a27550acba06294c9a54312a2f4840f4ad46&v=4"
+						src="https://avatars.githubusercontent.com/u/105777295?v=4"
 						borderRadius="md"
 					/>
 				</Fade>
 				<Fade direction="right" triggerOnce={true}>
-					<VStack>
+					<VStack spacing={20}>
 						<Heading>About Me</Heading>
-						<Text>
+						<Text fontSize={"xl"}>
 							<Highlight
 								query={[
 									"Dharani Raj",
@@ -62,6 +70,11 @@ const Aboutme = () => {
 							target="_blank"
 							download="fw21_0279-Dharani-Raj-Resume"
 							rel="noreferrer"
+							rightIcon={<BsDownload />}
+							className={`${styles.btn_read} ${styles.btn_animated}`}
+							bg={"blackAlpha.700"}
+							color={"white"}
+							align={"center"}
 						>
 							Resume
 						</Button>

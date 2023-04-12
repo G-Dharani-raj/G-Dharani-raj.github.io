@@ -9,6 +9,7 @@ const SkillCard = ({ img, name }) => {
 			transition="all 0.8s ease-in-out"
 			transform={"scale(0.8)"}
 			_hover={{ transform: "scale(1)" }}
+			m="auto"
 		>
 			<VStack
 				background="gray.700"

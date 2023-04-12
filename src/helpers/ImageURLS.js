@@ -14,3 +14,5 @@ export const MONGO_URL =
 	"https://raw.githubusercontent.com/nikhildeora/nikhildeora.github.io/5ebeee4655dbfb7d3cf5624b8cc27a87037aac28/src/assets/mongodb-seeklogo.svg";
 export const TYPESCRIPT_URL =
 	"https://nikhildeora.github.io/static/media/typescriptimage.17936c69824e11a996c4.png";
+export const POSTMAN_URL =
+	"https://www.svgrepo.com/show/354202/postman-icon.svg";

@@ -20,3 +20,62 @@
 	transform: scaleX(1);
 	transform-origin: bottom left;
 }
+.btn_read {
+	position: relative;
+	display: inline-block;
+	font-size: 14px;
+	padding: 15px 30px;
+	overflow: hidden;
+	z-index: 1;
+	color: #0d0d0d;
+	background-color: #ffffff;
+	border: none;
+	font-weight: 600;
+}
+.btn_animated:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(15, 180, 224);
+	transform: scaleX(0);
+	transform-origin: 0 50%;
+	transition-property: transform;
+	transition-duration: 2s;
+	transition-timing-function: ease-out;
+	z-index: -1;
+}
+.btn_animated:hover {
+	color: #fff;
+}
+.btn_animated:hover:before {
+	transform: scaleX(1);
+	transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
+}
+
+.navbar_top {
+	background: rgb(255, 255, 255);
+
+	opacity: 0.9;
+}
+
+.navbar_black {
+	background: black;
+	color: white;
+}
+
+.navbar_black a:hover {
+	color: #ffffff;
+	background-color: #000000;
+}
+
+.ham_normal {
+	color: black;
+	background: white;
+}
+.ham_black {
+	color: white;
+	background: black;
+}

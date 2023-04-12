@@ -4,11 +4,13 @@ import {
 	ButtonGroup,
 	Card,
 	CardBody,
+	Center,
 	Divider,
 	Flex,
 	Heading,
 	HStack,
 	Image,
+	SimpleGrid,
 	Stack,
 	Text,
 } from "@chakra-ui/react";
@@ -36,28 +38,38 @@ const ProjectCard = ({
 				marginBottom={10}
 				p={5}
 				transition="all 0.8s ease-in-out"
-				transform={"scale(1)"}
-				_hover={{ transform: "scale(1.1)" }}
+				transform={"scale(0.9)"}
+				_hover={{ transform: "scale(1)" }}
 			>
 				<Box>
-					<Image
-						objectFit="cover"
-						maxW={{ base: "100%", sm: "200px" }}
-						src={image}
-						alt="project image"
-					/>
+					<Center>
+						<Image
+							objectFit="cover"
+							maxW={{ base: "100%", sm: "200px" }}
+							src={image}
+							alt="project image"
+							py={20}
+						/>
+					</Center>
 				</Box>
 				<Stack lineHeight={"2rem"}>
 					<CardBody>
 						<Heading size={"md"}>{name}</Heading>
-						<Text>{description}</Text>
+						<Text my={10}>{description}</Text>
 						<HStack>
 							<Text>Tech Stack</Text>
-							<HStack>
+							<SimpleGrid
+								columns={{
+									base: 2,
+									lg: techstack.length,
+									md: Math.floor(techstack.length / 2),
+								}}
+								gap={1}
+							>
 								{techstack.map((e) => (
-									<Image src={e} width={30} key={e} />
+									<Image src={e} width={50} key={e} />
 								))}
-							</HStack>
+							</SimpleGrid>
 						</HStack>
 
 						<Divider my={5} />
